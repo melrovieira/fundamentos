@@ -1,0 +1,40 @@
+#menu {
+    display: none;
+}
+
+.menuicone {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content;
+
+}
+/* Estilo do menu oculto*/
+
+.menu-mobile{
+    display: none;
+    flex-direction: column;
+    background-color: black;
+}
+
+/*Estilização dos links dentro do menu oculto*/
+.menu-mobile a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    background-color: black;
+    border-top: 1px solid;
+}
+#menu:checked + .menuicone + .menu-mobile{
+    display: flex;
+}
+    
+    .menu-mobile li {
+        height: 40px;
+    }
+    
+.menu-mobile a:hover {
+    background-color: #1D1D2D;
+}

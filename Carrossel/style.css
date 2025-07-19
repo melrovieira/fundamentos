@@ -1,0 +1,9 @@
+#carrossel1-Slides {
+    width: 80%;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+}

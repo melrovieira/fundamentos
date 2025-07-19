@@ -1,0 +1,151 @@
+.menu-hover{
+    position: flex;
+    top: 0;
+    background-color: #e30613;
+    color: #ffffff;
+    width: 100%;
+    text-align: right;
+    left: 0;
+    right: 0;
+    position: sticky;
+    margin: 0;
+    
+}
+
+
+.menu-hover ul {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    list-style: none;
+    background-color: #e30613;
+    justify-content: center;
+}
+
+
+
+.menu-hover a{
+    transition: color 0.5s ease;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 10px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-hover a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #b60915 ;
+    transition: width 0.5s ease;
+}
+
+.menu-hover a:hover::after {
+    width: 100%;
+    font-size: large;
+    
+}
+
+
+#section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #e30613;
+}
+
+
+#SobreMim p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2rem;
+}
+
+#Contato {
+    position: flex;
+    top: 0;
+    background-color: #e30613;
+    height: 50px;
+    align-content: center;
+    color: #ffffff;
+    width: 100%;
+    text-align: right;
+    left: 0;
+    right: 0;
+}
+
+.social-icons {
+    list-style-type: none; 
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 20px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); 
+}
+
+#HabilidadesTecnicas {
+display: flex;
+text-align: left;
+margin-left: 20%;
+
+}
+
+#HabilidadesTecnicas h3 {
+    color: #e30613;
+    margin: 10px;
+margin-left: 10%;
+
+}
+
+#projects-title{
+    color: rgb(48, 46, 46);
+    text-align: center;
+}
+
+
+
+#ProjetosPessoais {
+    margin-left: 25%;
+}
+
+#carrossel1-Slides {
+    width: 80%;
+    margin-right: 50%;
+}
+
+#ExperienciaTrabalho ul {
+    text-align: center;
+    list-style: none;
+}
+
+#ExperienciaTrabalho h3 {
+    text-align: center;
+}
+
+#ExperienciaTrabalho li {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    list-style: none;
+    justify-content: center;
+}
+

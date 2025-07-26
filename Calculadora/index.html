@@ -16,7 +16,7 @@
             <table>
                 <tr class="line" id="ColumnOne">
                     <td><button class="botao" onclick="clearAll()">C</button></td>
-                    <td><button class="botao"onclick="insert('<')"><</button></td>
+                    <td><button class="botao"onclick="back()"><</button></td>
                     <td><button class="botao" onclick="insert('/')">/</button></td>
                     <td><button class="botao" onclick="insert('*')">*</button></td>
                 </tr>
@@ -36,12 +36,12 @@
                     <td><button class="botao"onclick="insert(1)">1</button></td>
                     <td><button class="botao"onclick="insert(2)">2</button></td>
                     <td><button class="botao"onclick="insert(3)">3</button></td>
-                    <td rowspan="2"><button class="botao">=</button></td>
+                    <td rowspan="2"><button class="botao"onclick="calcular()">=</button></td>
                 </tr>
                 <tr class="line" id="ColumnFive">
                     <td><button class="botao" onclick="insert('0')">0</button></td>
                     <td><button class="botao" onclick="insert('.')">.</button></td>
-                    <td><button class="botao" onclick="insert('²')" >x²</button></td>
+                    <td><button class="botao" onclick="insert('**')" >x²</button></td>
                 </tr>
             </table>
 

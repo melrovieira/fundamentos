@@ -24,9 +24,19 @@
             <li><a href="#SobreMim">Sobre Mim</a></li>
             <li><a href="#HabilidadesTecnicas">Habilidades Técnicas</a></li>
             <li><a href="#ProjetosPessoais">Projetos Pessoais</a></li>
-            <li><a href="#HabilidadesTecnicas">Experiência de Trabalho</a></li>
+            <li><a href="#ExperienciaTrabalho">Experiência de Trabalho</a></li>
             <li><a href="#Contato">Contato</a></li>
         </ul>
+    </nav>
+    <input type="checkbox" id="menu-check"></input>
+    <label for="menu-check" class="menuicone">&#9776; Menu</label>
+    <nav class="mobile-menu">
+        <a href="http://127.0.0.1:3000/Menus/E-Portifólio/index.html">Home</a>
+        <a href="#SobreMim">Sobre Mim</a>
+        <a href="#HabilidadesTecnicas">Habilidades Técnicas</a>
+        <a href="#ProjetosPessoais">Projetos Pessoais</a>
+        <a href="#ExperienciaTrabalho">Experiência de Trabalho</a>
+        <a href="#Contato">Contato</a>
     </nav>
 
 
@@ -63,7 +73,7 @@
                     <li>C</li>
                     <li>C++</li>
                     <li>Python</li>
-                    <li>JavaScript/TypeScrypt</li>
+                    <li>JavaScript/TypeScript</li>
                     <li>SQL</li>
                     <li>ShellScript</li>
                 </ul>
@@ -128,43 +138,44 @@
 
         </section>
         <h2 id="section-title"> Projetos Pessoais</h2>
-        <h3 id="projects-title">LoRa Messenger [Em Desenvolvimento]</h3>
+        <h3 class="projects-title">LoRa Messenger [Em Desenvolvimento]</h3>
 
         <section id="ProjetosPessoais">
-            <div id="projeto-lora">
-                <img src="lora.jpg" alt="Imagem Ilustrativa">
-                <p>[Imagem Ilustrativa]</p>
-                <p>Um dispositivo LoRa Off-Grid feito com Esp32, um módulo LoRa, um LILYGO® T-Keyboard ESP32, entre
+            <div class="projetos" id="projeto-lora">
+                <img class="ImagemProjeto" src="lora.jpg" alt="Imagem Ilustrativa">
+                <p class="text_project">[Imagem Ilustrativa]</p>
+                <p class="text_project">Um dispositivo LoRa Off-Grid feito com Esp32, um módulo LoRa, um LILYGO®
+                    T-Keyboard ESP32, entre
                     outros. O projeto esta em andamento,<br> o display e a comunicação esta pronta, tudo desenvolvido em
                     C++</p>
             </div>
         </section>
-        <h3 id="projects-title">Wifi Default Pass Wordlist Generator</h3>
+        <h3 class="projects-title">Wifi Default Pass Wordlist Generator</h3>
 
         <section id="ProjetosPessoais">
 
-            <div id="projeto-wordlist">
+            <div class="projetos" id="projeto-wordlist">
 
                 <center>
                     <div id="carrossel1-Slides" class="carousel slide" data-ride="carousel" data-interval="2000">
                         <div class="carousel-inner">
 
                             <div class="carousel-item active">
-                                <img class="d-block w-100" height="200px" src="example1.png" alt="">
+                                <img class="carrosel_imagem" height="200px" width="100%" src="example1.png" alt="">
                             </div>
 
                             <div class="carousel-item">
-                                <img class="d-block w-100" height="200px" src="example2.png" alt="">
-                            </div>
-
-
-                            <div class="carousel-item">
-                                <img class="d-block w-100" height="200px" src="example3.png" alt="">
+                                <img class="carrosel_imagem" height="200px" src="example2.png" alt="">
                             </div>
 
 
                             <div class="carousel-item">
-                                <img class="d-block w-100" height="200px" src="example4.png" alt="">
+                                <img class="carrosel_imagem" height="200px" src="example3.png" alt="">
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <img class="carrosel_imagem" height="200px" src="example4.png" alt="">
                             </div>
 
                         </div>
@@ -172,7 +183,8 @@
                 </center>
                 <br>
 
-                <p>Este script gera uma lista de palavras com base nas senhas padrão de Wi-Fi usadas por alguns ISPs
+                <p class="text_project">Este script gera uma lista de palavras com base nas senhas padrão de Wi-Fi
+                    usadas por alguns ISPs
                     (Provedores de Serviços de Internet),<br> como Vivo e Claro, no Brasil. Esses provedores costumam
                     usar
                     senhas padrão derivadas do endereço MAC ou do nome da rede.<br> A ferramenta cria combinações que
@@ -180,20 +192,38 @@
                     úteis para testes de segurança de rede (por exemplo, quebra de senhas, auditoria) <br>em redes onde
                     as
                     senhas padrão ainda são usadas.</p>
-                <a href="https://github.com/melrovieira/wifi-default-password-wordlist-generator">Link do projeto</a>
+                <a class="text_project"
+                    href="https://github.com/melrovieira/wifi-default-password-wordlist-generator">Link do projeto</a>
             </div>
         </section>
-        <h3 id="projects-title">Wasteland-Scavenger</h3>
+        <h3 class="projects-title">Wasteland-Scavenger</h3>
 
         <section id="ProjetosPessoais">
 
-            <div id="wasteland-scavenger">
+            <div class="projetos" id="wasteland-scavenger">
 
-                <img src="IMGCRIPT.webp" alt="Imagem Ilustrativa">
-                <p>Um projeto de um Credential Dumper que extrai logins do banco de dados Login Data dos navegadores.
+                <img class="ImagemProjeto" src="IMGCRIPT.webp" alt="Imagem Ilustrativa">
+                <p class="text_project">Um projeto de um Credential Dumper que extrai logins do banco de dados Login
+                    Data dos navegadores.
                     com a chave AES tirada do Local State.json. <br> Ele quebra as 3 camadas de criptografia usada pelos
                     navegadores. [Mais detalhes na página do GitHub]</p>
-                <a href="https://github.com/melrovieira/Wasteland-Scavenger">Link do projeto</a>
+                <a class="text_project" href="https://github.com/melrovieira/Wasteland-Scavenger">Link do projeto</a>
+            </div>
+        </section>
+        <h3 class="projects-title">Friendlytop [Em Desenvolvimento]</h3>
+        <section id="ProjetosPessoais">
+
+            <div class="projetos" id="friendlytop">
+
+
+                <img class="ImagemProjeto" src="Htop.png" alt="Imagem Ilustrativa">
+                <p class="text_project">[Imagem Ilustrativa]</p>
+                <p class="text_project">Um gerenciador de processos em C desenvolvido para Linux que visa simplificar o
+                    acompanhamento do
+                    desempenho do sistema <br> para usuarios comuns que optaram por escolher alguma distro Linux como
+                    seu sistema operacional. Ele tambem tem uma sobreposição <br> para ser usado em jogos, para
+                    acompanhar o uso de recursos <br> de hardware, alocação de memória e etc.</p>
+                <a class="text_project" href="https://github.com/melrovieira/friendlytop">Link do projeto</a>
             </div>
         </section>
 
@@ -208,6 +238,8 @@
                     contribuindo para a otimização de recursos <br> e aprimoramento da interface do usuário, resultando
                     em
                     uma experiência mais fluida e eficiente.</li>
+                <br>
+                <li></li>
             </ul>
 
             <h3>Formação Acadêmica e Cursos Complementares</h3>

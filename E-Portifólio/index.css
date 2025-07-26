@@ -1,4 +1,4 @@
-.menu-hover{
+.menu-hover {
     position: flex;
     top: 0;
     background-color: #e30613;
@@ -9,7 +9,7 @@
     right: 0;
     position: sticky;
     margin: 0;
-    
+
 }
 
 
@@ -24,7 +24,7 @@
 
 
 
-.menu-hover a{
+.menu-hover a {
     transition: color 0.5s ease;
     text-decoration: none;
     color: white;
@@ -34,21 +34,21 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.menu-hover a::after{
+.menu-hover a::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #b60915 ;
+    background-color: #b60915;
     transition: width 0.5s ease;
 }
 
 .menu-hover a:hover::after {
     width: 100%;
     font-size: large;
-    
+
 }
 
 
@@ -81,9 +81,9 @@
 }
 
 .social-icons {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
-    display: flex; 
+    display: flex;
     justify-content: center;
     gap: 40px;
 }
@@ -93,38 +93,46 @@
 }
 
 .social-icons img {
-    width: 20px; 
+    width: 20px;
     height: auto;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 #HabilidadesTecnicas {
-display: flex;
-text-align: left;
-margin-left: 20%;
+    display: flex;
+    text-align: left;
+    margin-left: 20%;
 
 }
 
 #HabilidadesTecnicas h3 {
     color: #e30613;
     margin: 10px;
-margin-left: 10%;
+    margin-left: 10%;
 
 }
 
-#projects-title{
+.projects-title {
     color: rgb(48, 46, 46);
     text-align: center;
+
+
 }
 
 
 
 #ProjetosPessoais {
     margin-left: 25%;
+    max-width: 40%;
+    align-items: center;
+    margin-left: 30%;
+    text-align: left;
+    margin-bottom: 50px;
+
 }
 
 #carrossel1-Slides {
@@ -133,7 +141,6 @@ margin-left: 10%;
 }
 
 #ExperienciaTrabalho ul {
-    text-align: center;
     list-style: none;
 }
 
@@ -149,3 +156,119 @@ margin-left: 10%;
     justify-content: center;
 }
 
+
+
+.ImagemProjeto {
+    max-width: 70%;
+    margin-left: 15%;
+    border-radius: 13px;
+    box-shadow: rgb(156, 148, 148) 7px 7px 8px;
+    margin-bottom: 30px;
+
+}
+
+.ImagemProjeto:hover {
+    box-shadow: rgb(156, 148, 148) 8px 9px 10px;
+    transition: box-shadow 0.7s ease;
+}
+
+.carrosel_imagem {
+    margin-left: 20%;
+    border-radius: 13px;
+    box-shadow: rgb(156, 148, 148) 7px 7px 8px;
+    /* Sombra maior e mais suave */
+    margin-bottom: 30px;
+
+}
+
+.carrosel_imagem:hover {
+    box-shadow: rgb(156, 148, 148) 8px 9px 10px;
+    transition: box-shadow 0.7s ease;
+}
+
+.text_project {
+    margin-left: 15%;
+}
+
+
+.projetos {
+    background-color: rgb(241, 238, 238);
+    border-radius: 40px;
+    padding: 15px 15px;
+    border: 3px solid #ccc;
+    box-shadow: rgb(156, 148, 148) 6px 6px 5px;
+
+}
+
+.projetos:hover {
+    box-shadow: rgb(156, 148, 148) 7px 7px 8px;
+    transition: box-shadow 0.7s ease;
+
+}
+
+.menuicone, .mobile-menu, #menu-check {
+    display: none;
+
+}
+.menu-hover {
+    display: block;
+}
+
+@media(max-width:768px){
+    .menu-hover {
+        display: none;
+    }
+    #menu-check{
+        display: none;
+    }
+    .menuicone {
+        display: block;
+        background-color: #e30613;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .mobile-menu{
+        display: none;
+        flex-direction: column;
+        background-color: #e30613;
+    }
+    .mobile-menu a{
+        color: white;
+        border-top: 1px solid white;
+        text-decoration: none;
+    }
+
+    .mobile-menu a:hover{
+        color: #b60915;
+    }
+    #menu-check:checked + .menuicone + .mobile-menu{
+        display: flex;
+    }
+
+    .menuicone{
+        position: sticky;
+        top: 0;
+    }
+    .menuicone:hover{
+        color: #b60915;
+    }
+    .mobile-menu{
+        position: sticky;
+        top: 42px;
+    }
+}
+
+
+
+.p-rodape {
+ text-align: center;
+ font-size: 20px;
+ font-weight: 600;
+ background-image: linear-gradient(to left, #553c9a 45%, #b393d3);
+ color: transparent;
+ background-clip: text;
+ -webkit-background-clip: text;
+ text-align: center;
+ text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+ letter-spacing: 5px;
+}
